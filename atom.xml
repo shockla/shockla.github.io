@@ -1,19 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-    <id>http://shockla.github.io</id>
-    <title>Gridea</title>
-    <updated>2020-12-01T23:18:38.648Z</updated>
+    <id>https://shockla.github.io</id>
+    <title>PLWG</title>
+    <updated>2020-12-01T23:28:03.240Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
-    <link rel="alternate" href="http://shockla.github.io"/>
-    <link rel="self" href="http://shockla.github.io/atom.xml"/>
-    <subtitle>温故而知新</subtitle>
-    <logo>http://shockla.github.io/images/avatar.png</logo>
-    <icon>http://shockla.github.io/favicon.ico</icon>
-    <rights>All rights reserved 2020, Gridea</rights>
+    <link rel="alternate" href="https://shockla.github.io"/>
+    <link rel="self" href="https://shockla.github.io/atom.xml"/>
+    <logo>https://shockla.github.io/images/avatar.png</logo>
+    <icon>https://shockla.github.io/favicon.ico</icon>
+    <rights>All rights reserved 2020, PLWG</rights>
     <entry>
         <title type="html"><![CDATA[Hello Gridea]]></title>
-        <id>http://shockla.github.io/post/hello-gridea/</id>
-        <link href="http://shockla.github.io/post/hello-gridea/">
+        <id>https://shockla.github.io/post/hello-gridea/</id>
+        <link href="https://shockla.github.io/post/hello-gridea/">
         </link>
         <updated>2018-12-11T16:00:00.000Z</updated>
         <summary type="html"><![CDATA[<p>👏  欢迎使用 <strong>Gridea</strong> ！<br>
