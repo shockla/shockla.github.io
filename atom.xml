@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-    <id>https://blog.spwg.online</id>
+    <id>http://localhost:4000</id>
     <title>PLWG</title>
-    <updated>2021-05-01T02:22:12.442Z</updated>
+    <updated>2021-05-01T02:22:54.962Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
-    <link rel="alternate" href="https://blog.spwg.online"/>
-    <link rel="self" href="https://blog.spwg.online/atom.xml"/>
-    <logo>https://blog.spwg.online/images/avatar.png</logo>
-    <icon>https://blog.spwg.online/favicon.ico</icon>
+    <link rel="alternate" href="http://localhost:4000"/>
+    <link rel="self" href="http://localhost:4000/atom.xml"/>
+    <logo>http://localhost:4000/images/avatar.png</logo>
+    <icon>http://localhost:4000/favicon.ico</icon>
     <rights>All rights reserved 2021, PLWG</rights>
     <entry>
         <title type="html"><![CDATA[计算机图形学 - 流水线基础]]></title>
-        <id>https://blog.spwg.online/post/ji-suan-ji-tu-xing-xue-liu-shui-xian-ji-chu/</id>
-        <link href="https://blog.spwg.online/post/ji-suan-ji-tu-xing-xue-liu-shui-xian-ji-chu/">
+        <id>http://localhost:4000/post/ji-suan-ji-tu-xing-xue-liu-shui-xian-ji-chu/</id>
+        <link href="http://localhost:4000/post/ji-suan-ji-tu-xing-xue-liu-shui-xian-ji-chu/">
         </link>
         <updated>2021-04-26T03:59:31.000Z</updated>
         <summary type="html"><![CDATA[<p>本文内容与网上已有的相关资料<strong>高度重合</strong>，仅作个人记录之用，<strong>不具参考价值</strong>。<br>
@@ -24,15 +24,15 @@
     </entry>
     <entry>
         <title type="html"><![CDATA[计算机图形学 - 数学基础]]></title>
-        <id>https://blog.spwg.online/post/ji-suan-ji-tu-xing-xue-ji-chu-shu-xue/</id>
-        <link href="https://blog.spwg.online/post/ji-suan-ji-tu-xing-xue-ji-chu-shu-xue/">
+        <id>http://localhost:4000/post/ji-suan-ji-tu-xing-xue-ji-chu-shu-xue/</id>
+        <link href="http://localhost:4000/post/ji-suan-ji-tu-xing-xue-ji-chu-shu-xue/">
         </link>
         <updated>2021-04-26T03:52:27.000Z</updated>
     </entry>
     <entry>
         <title type="html"><![CDATA[Hello Gridea]]></title>
-        <id>https://blog.spwg.online/post/hello-gridea/</id>
-        <link href="https://blog.spwg.online/post/hello-gridea/">
+        <id>http://localhost:4000/post/hello-gridea/</id>
+        <link href="http://localhost:4000/post/hello-gridea/">
         </link>
         <updated>2018-12-11T16:00:00.000Z</updated>
         <summary type="html"><![CDATA[<p>👏  欢迎使用 <strong>Gridea</strong> ！<br>
