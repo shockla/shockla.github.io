@@ -1,0 +1,77 @@
+<?xml version="1.0"?>
+<svg width="800" height="350" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg">
+ <!-- Created with SVG-edit - https://github.com/SVG-Edit/svgedit-->
+ <g class="layer" display="inline">
+  <title>Layer 1</title>
+  <rect fill="#ffffff" fill-opacity="0.25" height="328.244275" id="svg_78" stroke="#191919" stroke-opacity="0.01" stroke-width="3" width="751.145038" x="24.427491" y="10.877853"/>
+ </g>
+ <g class="layer" display="inline">
+  <title>图层 2</title>
+  <g id="svg_77">
+   <g id="svg_76">
+    <path d="m53.35858,37.50894l705,0l0,125l-705,0l0,145l635,0" fill="#000000" fill-opacity="0" id="svg_67" stroke="#ff007f" stroke-opacity="0.5" stroke-width="3"/>
+    <path d="m115.16349,308.42535l-10.3932,-18.65671l18.6873,18.65671l-18.6873,18.65671l10.3932,-18.65671z" fill="#ffffff" fill-opacity="0.07" id="svg_70" stroke="#ff007f" stroke-opacity="0.5" stroke-width="3"/>
+    <path d="m109.97289,38.36275l-10.39319,-18.65671l18.68729,18.65671l-18.68729,18.65671l10.39319,-18.65671z" fill="#ffffff" fill-opacity="0.07" id="svg_71" stroke="#ff007f" stroke-opacity="0.5" stroke-width="3"/>
+    <path d="m379.87182,37.87991l-10.3932,-18.65671l18.6873,18.65671l-18.6873,18.65671l10.3932,-18.65671z" fill="#ffffff" fill-opacity="0.07" id="svg_72" stroke="#ff007f" stroke-opacity="0.5" stroke-width="3"/>
+    <path d="m646.75965,38.85324l-10.39319,-18.65671l18.6873,18.65671l-18.6873,18.65671l10.39319,-18.65671z" fill="#ffffff" fill-opacity="0.07" id="svg_73" stroke="#ff007f" stroke-opacity="0.5" stroke-width="3"/>
+    <path d="m369.96067,308.29757l-10.39319,-18.65671l18.68729,18.65671l-18.68729,18.65671l10.39319,-18.65671z" fill="#ffffff" fill-opacity="0.07" id="svg_74" stroke="#ff007f" stroke-opacity="0.5" stroke-width="3"/>
+    <path d="m679.90812,308.14379l-10.39319,-18.65671l18.6873,18.65671l-18.6873,18.6567l10.39319,-18.6567z" fill="#ffffff" fill-opacity="0.07" id="svg_75" stroke="#ff007f" stroke-opacity="0.5" stroke-width="3"/>
+   </g>
+   <g id="svg_59">
+    <rect fill="#ffffff" fill-opacity="0.07" height="100" id="svg_53" stroke="#000000" width="590" x="137.200047" y="12.41275"/>
+    <g id="svg_16">
+     <rect fill="#00c800" fill-opacity="0.5" height="35" id="svg_3" stroke="#000000" width="100" x="152.200045" y="56.994342"/>
+     <text fill="#000000" font-family="serif" font-size="16" id="svg_4" stroke="#000000" stroke-dasharray="2,2" stroke-width="0" text-anchor="middle" x="202.200045" xml:space="preserve" y="81.994342">顶点着色器</text>
+    </g>
+    <g id="svg_20">
+     <rect fill="#777777" fill-opacity="0.5" height="35" id="svg_21" stroke="#000000" width="80" x="41.641388" y="57.412748"/>
+     <text fill="#000000" font-family="serif" font-size="16" id="svg_22" stroke="#000000" stroke-width="0" text-anchor="middle" x="83.2615" xml:space="preserve" y="81.854089">顶点数据</text>
+    </g>
+    <g fill-opacity="0.5" id="svg_23">
+     <rect fill="#00c800" fill-opacity="0.5" height="35" id="svg_24" stroke="#000000" stroke-dasharray="2,2" width="100" x="267.20004" y="57.412752"/>
+     <text fill="#000000" font-family="serif" font-size="13" font-weight="bold" id="svg_25" stroke="#000000" stroke-width="0" text-anchor="middle" x="317.20004" xml:space="preserve" y="82.412752">曲面细分着色器</text>
+    </g>
+    <g id="svg_26">
+     <rect fill="#00c800" fill-opacity="0.5" height="35" id="svg_27" stroke="#000000" stroke-dasharray="2,2" width="100" x="382.200043" y="57.412754"/>
+     <text fill="#000000" font-family="serif" font-size="16" id="svg_28" stroke="#000000" stroke-width="0" text-anchor="middle" x="432.200043" xml:space="preserve" y="82.412754">几何着色器</text>
+    </g>
+    <g id="svg_29">
+     <rect fill="#c8c800" fill-opacity="0.5" height="35" id="svg_30" stroke="#000000" width="100" x="497.200027" y="57.412752"/>
+     <text fill="#000000" font-family="serif" font-size="16" id="svg_31" stroke="#000000" stroke-width="0" text-anchor="middle" x="547.200027" xml:space="preserve" y="81.854093">裁剪</text>
+    </g>
+    <g id="svg_32">
+     <rect fill="#0099c9" fill-opacity="0.5" height="35" id="svg_33" stroke="#000000" width="100" x="612.200011" y="57.41275"/>
+     <text fill="#000000" font-family="serif" font-size="16" id="svg_34" stroke="#000000" stroke-width="0" text-anchor="middle" x="662.200011" xml:space="preserve" y="82.41275">屏幕映射</text>
+    </g>
+    <text fill="#000000" font-family="serif" font-size="20" id="svg_55" stroke="#000000" stroke-width="0" text-anchor="middle" x="182.200047" xml:space="preserve" y="37.41275">几何阶段</text>
+   </g>
+   <g id="svg_58">
+    <rect fill="#ffffff" fill-opacity="0.07" height="100" id="svg_54" stroke="#000000" width="475" x="127.839263" y="237.587233"/>
+    <g id="svg_35">
+     <rect fill="#0099c8" fill-opacity="0.5" height="35" id="svg_36" stroke="#000000" width="100" x="142.839261" y="250.939207"/>
+     <text fill="#000000" font-family="serif" font-size="16" id="svg_37" stroke="#000000" stroke-width="0" text-anchor="middle" x="192.839261" xml:space="preserve" y="275.939207">三角形设置</text>
+    </g>
+    <g id="svg_41">
+     <rect fill="#0099c8" fill-opacity="0.5" height="35" id="svg_42" stroke="#000000" width="100" x="257.83926" y="252.056506"/>
+     <text fill="#000000" font-family="serif" font-size="16" id="svg_43" stroke="#000000" stroke-width="0" text-anchor="middle" x="307.83926" xml:space="preserve" y="277.056506">三角形遍历</text>
+    </g>
+    <g id="svg_44">
+     <rect fill="#00c800" fill-opacity="0.5" height="35" id="svg_45" stroke="#000000" stroke-dasharray="2,2" width="100" x="372.839255" y="252.056518"/>
+     <text fill="#000000" font-family="serif" font-size="16" id="svg_46" stroke="#000000" stroke-width="0" text-anchor="middle" x="422.839255" xml:space="preserve" y="277.056518">片元着色器</text>
+    </g>
+    <g id="svg_47">
+     <rect fill="#c8c800" fill-opacity="0.5" height="35" id="svg_48" stroke="#000000" width="100" x="487.83928" y="252.056519"/>
+     <text fill="#000000" font-family="serif" font-size="16" id="svg_49" stroke="#000000" stroke-width="0" text-anchor="middle" x="537.83928" xml:space="preserve" y="277.056519">逐片元操作</text>
+    </g>
+    <g id="svg_50">
+     <rect fill="#777777" fill-opacity="0.5" height="35" id="svg_51" stroke="#000000" width="100" x="617.839245" y="251.497851"/>
+     <text fill="#000000" font-family="serif" font-size="16" id="svg_52" stroke="#000000" stroke-width="0" text-anchor="middle" x="667.839245" xml:space="preserve" y="276.497851">屏幕图像</text>
+    </g>
+    <text fill="#000000" font-family="serif" font-size="20" id="svg_56" stroke="#000000" stroke-width="0" text-anchor="middle" x="182.839263" xml:space="preserve" y="327.056516">光栅化阶段</text>
+   </g>
+  </g>
+ </g>
+ <g class="layer" display="inline">
+  <title>图层 3</title>
+ </g>
+</svg>
