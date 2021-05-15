@@ -1,0 +1,222 @@
+<html>
+<head>
+    <meta charset="utf-8"/>
+<meta name="description" content=""/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+
+<title>计算机图形学 - 数学实践 | PLWG</title>
+
+<link rel="shortcut icon" href="https://blog.spwg.online/favicon.ico?v=1621075289634">
+
+<link href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css" rel="stylesheet">
+<link rel="stylesheet" href="https://blog.spwg.online/styles/main.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.0/dist/css/bootstrap.min.css">
+
+<script src="https://cdn.jsdelivr.net/npm/@highlightjs/cdn-assets/highlight.min.js"></script>
+<script src="https://cdn.bootcss.com/highlight.js/9.15.10/languages/dockerfile.min.js"></script>
+<script src="https://cdn.bootcss.com/highlight.js/9.15.10/languages/dart.min.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/moment@2.27.0/moment.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.0/dist/js/bootstrap.min.js"></script>
+<!-- DEMO JS -->
+<!--<script src="media/scripts/index.js"></script>-->
+
+
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.css">
+</head>
+<body>
+<div class="main gt-bg-theme-color-first">
+    <nav class="navbar navbar-expand-lg">
+    <div class="navbar-brand">
+        <img class="user-avatar" src="/images/avatar.png" alt="头像">
+        <div class="site-name gt-c-content-color-first">
+            PLWG
+        </div>
+    </div>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <i class="fas fa-bars gt-c-content-color-first" style="font-size: 18px"></i>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <div class="navbar-nav mr-auto" style="text-align: center">
+            
+                <div class="nav-item">
+                    
+                        <a href="/tags" class="menu gt-a-link">
+                            Tags
+                        </a>
+                    
+                </div>
+            
+                <div class="nav-item">
+                    
+                        <a href="https://blog.spwg.online/post/about" class="menu gt-a-link">
+                            About
+                        </a>
+                    
+                </div>
+            
+                <div class="nav-item">
+                    
+                        <a href="https://blog.spwg.online" class="menu gt-a-link">
+                            Index
+                        </a>
+                    
+                </div>
+            
+        </div>
+        <div style="text-align: center">
+            <form id="gridea-search-form" style="position: relative" data-update="1621075289634" action="/search/index.html">
+                <input class="search-input" autocomplete="off" spellcheck="false" name="q" placeholder="搜索文章" />
+                <i class="fas fa-search gt-c-content-color-first" style="position: absolute; top: 9px; left: 10px;"></i>
+            </form>
+        </div>
+    </div>
+</nav>
+
+    <div class="post-container">
+        <div class="post-detail gt-bg-theme-color-second">
+            <article class="gt-post-content">
+                <h2 class="post-title">
+                    计算机图形学 - 数学实践
+                </h2>
+                <div class="post-info">
+                    <time class="post-time gt-c-content-color-first">
+                        · 2021-05-07 ·
+                    </time>
+                    
+                        <a href="https://blog.spwg.online/tag/bT9NPT9S6/" class="post-tags">
+                            # 轮子
+                        </a>
+                    
+                        <a href="https://blog.spwg.online/tag/K2MBvUGig/" class="post-tags">
+                            # LÖVE
+                        </a>
+                    
+                        <a href="https://blog.spwg.online/tag/G9MYWt-1r/" class="post-tags">
+                            # 计算机图形学
+                        </a>
+                    
+                </div>
+                <div class="post-content">
+                    <p>本文主要记录学习计算机图形学数学相关内容时，基于<a href="https://love2d.org/">LÖVE</a>实现顶点坐标从模型空间到屏幕空间的转换的过程。</p>
+<p>实现代码将上传到<a href="https://github.com/shockla/love2d_CGMath">github</a>。</p>
+<p><a href="https://love2d.org/">LÖVE</a>是一个2D框架，主要提供通过屏幕二维坐标画点画线的功能，<code>LÖVE</code>不太好打，所以也被称为love2d。<br>
+<a href="https://github.com/Pascal-So/lua-matrix.git">lua-matrix</a>，现成的矩阵库，支持的矩阵尺寸似乎无上限。<br>
+<a href="https://github.com/Luke100000/luaVectors.git">luavectors</a>，现成的向量库，支持vec2/vec3/vec4。</p>
+<h1 id="基本原理">基本原理</h1>
+<p>这一部分主要回顾顶点坐标从模型空间到屏幕空间都经历了些什么。</p>
+<p>首先顶点坐标被定义在<strong>模型空间</strong>里，这些坐标的值由模型制作者决定。</p>
+<p>然后，我们把顶点坐标转换到<strong>世界空间</strong>。<br>
+在实际的场景里，每个被绘制的模型，相对于世界空间的原点，都会有自己的缩放、旋转、位移。<br>
+这意味着不同模型中的顶点坐标所在的坐标系是不同的。<br>
+为了计算方便，我们需要用一个统一的坐标系来描述所有的模型中的顶点坐标，这就是世界空间。</p>
+<p>接着，坐标被转换到<strong>观察空间</strong>，这方便了坐标的描述，以及后续的其他操作（裁剪等）。<br>
+这就好像人看东西一样，以自己为原点，描述方位，如“前方50米处，左转。”。以及描述能见度，如“今天下了雨，我看不到5公里外的那个大烟囱了。”</p>
+<p>随后，坐标被转换到<strong>裁剪空间</strong>。<br>
+这个空间的作用就稍微有点抽象。我看了书有点似懂非懂，一度认为“裁剪”就是“剔除”，而这个操作只是为了优化性能表现，不是必要的，甚至进一步有了“既然裁剪不是必要的，那裁剪空间也可以省略了”这种想法。<br>
+直到我亲自把整个转换写了一遍，才意识到“裁剪”和“裁剪空间”都是必须的，并且“裁剪”和“剔除”是两码事。<br>
+以下是我的理解：裁剪空间，就是从观察空间裁剪下来的空间。<br>
+裁剪操作一开始只有一次，即从大空间里裁剪出一个小空间，但是现在有两次，第二次裁剪是裁剪三角形（在屏幕边缘生成新的顶点，避免三角形突然消失显得突兀），这个裁剪操作就是一开始的“剔除”操作的升级版。<br>
+<strong>剔除的必要性</strong> ：如果不剔除，摄像机后面的（不在视锥体内的）顶点也会被投影出来，这在大多数情况下都不是想要的结果。<br>
+<strong>裁剪空间的必要性</strong> ：没有裁剪空间就没法投影——我们必须先从观察空间切下一小块（裁剪空间），然后把这个空间压平（投影），我们不能把<strong>无限</strong><sup class="footnote-ref"><a href="#fn1" id="fnref1">[1]</a></sup>的观察空间（移动了原点的世界空间）投影到<strong>有限</strong>的屏幕空间，除非我们有无限大的屏幕（这显然不可能）。</p>
+<p>最后，坐标被转换到<strong>屏幕空间</strong>。</p>
+<h1 id="实现进度">实现进度</h1>
+<figure data-type="image" tabindex="1"><img src="https://blog.spwg.online/post-images/1621074755822.png" alt="" loading="lazy"></figure>
+<ul>
+<li>投影矩阵，从书上照抄，似乎有问题</li>
+<li>正交矩阵，尚未实现</li>
+<li>实现obj的loader</li>
+<li>以三角形为最小处理单位并绘制</li>
+</ul>
+<hr class="footnotes-sep">
+<section class="footnotes">
+<ol class="footnotes-list">
+<li id="fn1" class="footnote-item"><p>无限：如果不做剔除操作，我们可以把投影摄像机前后两个方向上的，没有定义远裁剪平面的，所有在视锥体内的顶点投影到屏幕空间。严格地说，这算是实现了“把无限的空间投影到有限的空间”，所以上面说的“不能把无限投影到有限”并不严谨，意会就好。 <a href="#fnref1" class="footnote-backref">↩︎</a></p>
+</li>
+</ol>
+</section>
+
+                </div>
+            </article>
+        </div>
+
+        
+            <div class="next-post">
+                <div class="next gt-c-content-color-first">下一篇</div>
+                <a href="https://blog.spwg.online/post/cg-math-essential/" class="post-title gt-a-link">
+                    计算机图形学 - 数学基础
+                </a>
+            </div>
+        
+
+        
+
+        
+
+        
+            <script src='https://cdn.jsdelivr.net/npm/valine/dist/Valine.min.js'></script>
+
+<style>
+	div#vcomments{
+		width:100%;
+		max-width: 1000px;
+		padding: 2.5%
+	}
+</style>
+
+
+	<div id="vcomments"></div>
+
+<script>
+	new Valine({
+		el: '#vcomments',
+		appId: 'f7hwVPnslejmadxepzG7rciI-gzGzoHsz',
+		appKey: 'zRc05wBvBdwXc4IC3o7DO33u',
+		avatar: '',
+		pageSize: 5,
+		recordIp: false,
+		placeholder: 'Just Go Go',
+		visitor: false,
+	});
+</script>
+
+        
+
+        <div class="site-footer gt-c-content-color-first">
+    <div class="slogan gt-c-content-color-first"></div>
+    <div class="social-container">
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+    </div>
+    <div class="footer-info">
+        
+    </div>
+    <!-- div>
+        Theme by <a href="https://imhanjie.com/" target="_blank">imhanjie</a>, Powered by <a
+                href="https://github.com/getgridea/gridea" target="_blank">Gridea | <a href="https://blog.spwg.online/atom.xml" target="_blank">RSS</a></a>
+    </div -->
+</div>
+
+<script>
+  hljs.initHighlightingOnLoad()
+</script>
+
+    </div>
+</div>
+</body>
+</html>
