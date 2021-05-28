@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-    <id>https://blog.spwg.online</id>
+    <id>https://blog.drunken.monster</id>
     <title>PLWG</title>
-    <updated>2021-05-16T04:55:18.000Z</updated>
+    <updated>2021-05-28T16:26:36.608Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
-    <link rel="alternate" href="https://blog.spwg.online"/>
-    <link rel="self" href="https://blog.spwg.online/atom.xml"/>
-    <logo>https://blog.spwg.online/images/avatar.png</logo>
-    <icon>https://blog.spwg.online/favicon.ico</icon>
+    <link rel="alternate" href="https://blog.drunken.monster"/>
+    <link rel="self" href="https://blog.drunken.monster/atom.xml"/>
+    <logo>https://blog.drunken.monster/images/avatar.png</logo>
+    <icon>https://blog.drunken.monster/favicon.ico</icon>
     <rights>All rights reserved 2021, PLWG</rights>
     <entry>
         <title type="html"><![CDATA[Hello Gridea]]></title>
-        <id>https://blog.spwg.online/post/hello-gridea/</id>
-        <link href="https://blog.spwg.online/post/hello-gridea/">
+        <id>https://blog.drunken.monster/post/hello-gridea/</id>
+        <link href="https://blog.drunken.monster/post/hello-gridea/">
         </link>
         <updated>2018-12-11T16:00:00.000Z</updated>
         <summary type="html"><![CDATA[<p>👏  欢迎使用 <strong>Gridea</strong> ！<br>
