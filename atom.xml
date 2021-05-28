@@ -1,14 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://blog.drunken.monster</id>
-    <title>PLWG</title>
-    <updated>2021-05-28T16:26:36.608Z</updated>
+    <title>？</title>
+    <updated>2021-05-28T16:32:00.269Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://blog.drunken.monster"/>
     <link rel="self" href="https://blog.drunken.monster/atom.xml"/>
+    <subtitle>Nope</subtitle>
     <logo>https://blog.drunken.monster/images/avatar.png</logo>
     <icon>https://blog.drunken.monster/favicon.ico</icon>
-    <rights>All rights reserved 2021, PLWG</rights>
+    <rights>All rights reserved 2021, ？</rights>
     <entry>
         <title type="html"><![CDATA[Hello Gridea]]></title>
         <id>https://blog.drunken.monster/post/hello-gridea/</id>
